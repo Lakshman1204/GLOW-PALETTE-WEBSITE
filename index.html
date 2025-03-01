@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Palette - Makeup Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Glow Palette</h1>
+        <p>Enhancing Beauty, Confidence & Joy</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>A group of fresh graduates turned their passion for makeup into a profession. From weddings to special events, Glow Palette brings beauty to life.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li><input type="checkbox" value="150" onclick="calculateTotal()"> <strong>Classic Package</strong> (Engagement) - RM150</li>
+            <li><input type="checkbox" value="350" onclick="calculateTotal()"> <strong>Premium Package</strong> (Event) - RM350</li>
+            <li><input type="checkbox" value="750" onclick="calculateTotal()"> <strong>Ultimate Package</strong> (Wedding/Reception) - RM750</li>
+            <li><input type="checkbox" value="150" onclick="calculateTotal()"> <strong>Enhanced Package</strong> (Formal Event) - RM150</li>
+            <li><input type="checkbox" value="300" onclick="calculateTotal()"> <strong>Deluxe Package</strong> (Parties) - RM300</li>
+            <li><input type="checkbox" value="350" onclick="calculateTotal()"> <strong>Theatre & Stage Makeup</strong> - RM350++</li>
+            <li><input type="checkbox" value="150" onclick="calculateTotal()"> <strong>Special Effects</strong> - RM150++</li>
+            <li><input type="checkbox" value="150" onclick="calculateTotal()"> <strong>Hair Styling</strong> - RM100 - RM150</li>
+            <li><input type="checkbox" value="688" onclick="calculateTotal()"> <strong>Cosmetic Techniques Seminar</strong> - RM688</li>
+        </ul>
+        <h3 id="totalPrice">Total: RM 0</h3>
+    </section>
+
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <p><strong>Founder:</strong> Locana Naidu - 8 years of experience</p>
+        <p><strong>Financial Officer:</strong> Nordhia Qistina - 6 years of experience</p>
+        <p><strong>Marketing Head:</strong> Nur Maizaitul - 6 years of experience</p>
+        <p><strong>Makeup Specialist:</strong> Hasmia Hasan - 7 years of experience</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: glowpallete94@jmaily.com</p>
+        <p>Instagram: @glowpallete_4u</p>
+        <p>Meta: Glow Foundation</p>
+        <p>WhatsApp: +011-25709837</p>
+
+        <h3>Contact Form</h3>
+        <form onsubmit="return validateForm()">
+            <input type="email" id="email" placeholder="Enter your email"><br>
+            <input type="text" id="phone" placeholder="Enter your phone"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Glow Palette. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
